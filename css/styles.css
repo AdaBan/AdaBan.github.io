@@ -119,7 +119,8 @@ header {
 	background-color: #FFFF6F; 
 }
 #about ul {
-	padding: 10px 30px;
+	padding: 10px 40px 40px;
+	
 }
 #about ul li {
 	padding: 10px;
@@ -161,12 +162,20 @@ footer p {
 
 
 /*--MEDIA QUERIES--*/
-@media screen and (max-device-width: 920px) {
+@media screen and (max-width: 920px) {
 	#about ul {
 		padding: 10px;
 	}
 	#social-media span.fa {
 		font-size: 2.5em;
+	}
+}
+@media screen and (min-width: 700px) and (max-width: 767px) {
+	#social-media {
+		margin-top: 50px;
+	}
+	#social-media span.fa {
+		font-size: 4em;
 	}
 }
 @media screen and (max-width: 700px) {
@@ -203,5 +212,30 @@ footer p {
 		font-size: 3.5em;
 		display: inline-block;
 		padding: 10px;
+	}
+}
+@media screen and (max-width: 736px) and (orientation: landscape) {
+	h1 {
+		line-height: 1;
+		padding: 60px 0 10px;
+		font-weight: 300;
+		font-size: 2em;
+	}
+	h2 {
+		font-size: 1.5em;
+	}
+	#intro a.btn {
+		font-size: 1em;
+	}
+	header {
+		height: 125vh;
+	}
+}
+@media screen and (max-width: 360px) {
+	header {
+		height: 125vh;
+	}
+	#social-media span.fa {
+		font-size: 3em;
 	}
 }
