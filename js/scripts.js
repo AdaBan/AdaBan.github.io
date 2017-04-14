@@ -5,6 +5,6 @@ function changeColor(button, color) {
 		$(button).addClass("selected");
 	});
 }
-changeColor("#btn-hazelnut","#d1af94");
+changeColor("#btn-hazelnut","#a1887f");
 changeColor("#btn-blue","#22264b");
-changeColor("#btn-olive","#AB8F46");
+changeColor("#btn-olive","#536769");

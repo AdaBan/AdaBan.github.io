@@ -15,7 +15,7 @@ body {
 	padding-bottom: 50px;
 }
 .main-color {
-	background: #d1af94;
+	background: #a1887f;
 }
 a {
 	display: inline-block;
@@ -33,13 +33,15 @@ a:hover {
 h1,
 h2,
 h3 {
-	font-family: "Eczar";
+	font-family: "Eczar";	
+	letter-spacing: 1px;
 }
 h1 {
-	font-size: 3em;
+	font-size: 2.5em;
+	
 }
 h2 {
-	font-size: 2em;
+	font-size: 1.8em;
 	margin-bottom: 10vh;
 }
 h3 {
@@ -56,6 +58,8 @@ header {
 	color: white;	
 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
 	clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+	-webkit-clip-path: url("#header-clip-shape"); 
+   	clip-path: url("#header-clip-shape");
 }
 #intro {
 	position: absolute;
@@ -85,10 +89,10 @@ header {
 	cursor: pointer;
 }
 #color-buttons button#btn-hazelnut {
-	background: #d1af94;
+	background: #a1887f;
 }
 #color-buttons button#btn-olive {
-	background: #AB8F46;
+	background: #536769;
 }
 #color-buttons button#btn-blue {
 	background: #22264b;
@@ -101,6 +105,7 @@ header {
 /*--ABOUT SECTION--*/
 #about h3 {
 	float: right;
+	margin-top: 20px;
 }
 #about h4 {
 	font-size: 1.2em;
@@ -126,13 +131,23 @@ header {
 	padding: 10px;
 	width: 100%;
 }
-
+#current {
+	margin-bottom: 50px;
+}
+#current article {
+	width: 80%;
+	margin: 0 auto;
+	padding: 50px;
+	border: #FFFF6F solid 2px;
+}
 
 /*FOOTER*/
 footer {
 	color: white;
 	-webkit-clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
 	clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+	-webkit-clip-path: url("#footer-clip-shape"); 
+   	clip-path: url("#footer-clip-shape");
 	position: relative;
 	padding: 50px 0 20px;
 }
@@ -150,7 +165,7 @@ footer p {
 	border: none;
 }
 #social-media span.fa {
-	font-size: 4em;
+	font-size: 4.2em;
 	display: inline-block;
 	padding-left: 50px;
 	cursor: pointer;
