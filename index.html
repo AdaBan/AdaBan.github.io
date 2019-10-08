@@ -4,79 +4,98 @@
 		<meta charset = "UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<title>Ada Banaszak - front-end developer</title>
-		<link href="https://fonts.googleapis.com/css?family=Eczar|Work+Sans:300,400" rel="stylesheet">
-		<script src="https://use.fontawesome.com/0cbfc6ad26.js"></script>
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/styles.css">
-		<link rel="stylesheet" href="css/grid.css">
+		<link href="https://fonts.googleapis.com/css?family=Karla&display=swap" rel="stylesheet"> 
 	</head>
 	<body>
-		<header class="main-color">
-			<div class="container">
-				<div id="intro">
-					<h1>Hello, my name is Ada</h1>
-					<h2>and I am a front-end developer based in Warsaw, Poland.</h2>
-					<a class="btn" href="https://drive.google.com/file/d/1qatGehSJVowaL4SkPyljelCa0op6qDcO/view?usp=sharing" target="_blank">My CV (PL)</a>
-				</div>
+		<header class="header">
+			<div class="header__text container">
+				<h1 class="header__title">
+					Hello, my&nbsp;name&nbsp;is&nbsp;Ada&nbsp;👋
+				</h1>
+				<h2 class="header__subtitle">
+					I am a front-end developer based in Warsaw, Poland.
+				</h2>
+				<a
+					class="header__button"
+					href="https://drive.google.com/file/d/1qatGehSJVowaL4SkPyljelCa0op6qDcO/view?usp=sharing"
+					target="_blank"
+				>
+					My CV (PL)
+				</a>
 			</div>
-			<svg width="0" height="0">
-				<defs>
-			    	<clipPath id="header-clip-shape" clipPathUnits="objectBoundingBox">
-			    		<polygon points="0 0, 1 0, 1 0.8, 0 1" />
-			    	</clipPath>
-				</defs>
-			</svg>
 		</header>
-		<main>
-			<section id="about" class="container">
-				<div class="row">
-					<article class="col-m-6 col-s-12">
-						<h4>I am</h4>
-						<ul>
-							<li>a fast learner ready to improve my knowledge,</li>
-							<li>a team player who believes in sharing, cooperation and inclusion,</li>
-							<li>always trying to stay up to date with the new trends in front-end technology,</li>
-							<li>fluent in English,</li>
-							<li>skilled in editing texts in Polish,</li>
-							<li>open-minded and communicative.</li>
-						</ul>
-					</article>
-					<article class="col-m-6 col-s-12">
-						<h4>Coding</h4>
-						<ul>
-							<li>I use <strong>SCSS</strong>, <strong>Typescript</strong> and <strong>Angular 2+</strong> in my everyday work.</li>
-							<li>I write semantically correct <strong>HTML5</strong> code based on good knowledge of W3C standards.</li>
-							<li>I know and apply the rules of <strong>Responsive Web Design</strong> and I am familiar with <strong>modern CSS layout</strong> techniques.
-							<li>I am familiar with <strong>Git</strong> and with <strong>Scrum</strong> methodology.</li>
-							<li>I am not afraid of <strong>Photoshop</strong>, <strong>Sketch</strong> and <strong>Abstract</strong>.</li>			
-						</ul>
-					</article>
-				</div>
+		<main class="about container">
+			<section class="about__section">
+				<h4 class="about__title">
+					I am
+				</h4>
+				<ul class="about__list list">
+					<li class="list__item">
+						a fast learner ready to improve my knowledge,
+					</li>
+					<li class="list__item">
+						a team player who believes in sharing, cooperation and inclusion,
+					</li>
+					<li class="list__item">
+						always trying to stay up to date with the new trends in front-end technology,
+					</li>
+					<li class="list__item">
+						fluent in English,
+					</li>
+					<li class="list__item">
+						skilled in editing texts in Polish,
+					</li>
+					<li class="list__item">
+						open-minded and communicative.
+					</li>
+				</ul>
+			</section>
+			<section class="about__section">
+				<h4 class="about__title">Coding</h4>
+				<ul class="about__list list">
+					<li class="list__item">
+						I use <strong>SCSS</strong>, <strong>Typescript</strong> and <strong>Angular 2+</strong> in my everyday work.
+					</li>
+					<li class="list__item">
+						I write semantically correct <strong>HTML5</strong> code based on good knowledge of W3C standards.
+					</li>
+					<li class="list__item">
+						I know and apply the rules of <strong>Responsive Web Design</strong> and I am familiar with <strong>modern CSS layout</strong> techniques.
+					</li>
+					<li class="list__item">
+						I am familiar with <strong>Git</strong> and with <strong>Scrum</strong> methodology.
+					</li>
+					<li class="list__item">
+						I am not afraid of <strong>Photoshop</strong>, <strong>Sketch</strong> and <strong>Abstract</strong>.
+					</li>			
+				</ul>
 			</section>
 		</main>
-		<footer class="main-color">
-			<svg width="0" height="0">
-				<defs>
-			    	<clipPath id="footer-clip-shape" clipPathUnits="objectBoundingBox">
-			    		<polygon points="0 0, 1 0.1, 1 1, 0 1" />
-			    		<!-- clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%); -->
-			    	</clipPath>
-				</defs>
-			</svg>
-			<div class="container">
-				<div class="row">
-					<div class="col-m-5">
-						<h3>Contact me</h3>
-						<p>Feel free to contact me via <a href="mailto:ada.banaszak@gmail.com">e-mail</a>, <a href="https://github.com/AdaBan" target="_blank">github</a> or <a href="https://twitter.com/ada_banaszak" target="_blank">twitter</a>. I would be happy to chat and get to know you!</p>
-					</div>
-					<div class="col-m-7">
-						<div id="social-media">
-							<a href="mailto:ada.banaszak@gmail.com" aria-label="e-mail"><span class="fa fa-envelope-o" aria-hidden="true"></span></a>
-							<a href="https://github.com/AdaBan" target="_blank" aria-label="github"><span class="fa fa-github" aria-hidden="true"></span></a>
-							<a href="https://twitter.com/ada_banaszak" target="_blank" aria-label="twitter"><span class="fa fa-twitter" aria-hidden="true"></span></a>
-						</div>
-					</div>
-				</div>
+		<footer class="contact">
+			<div class="contact__inner container">
+				<p class="contact__text">
+					Feel free to contact me via 
+					<a
+						class="contact__link"
+						href="mailto:ada.banaszak@gmail.com"
+					>
+						e-mail
+					</a>, 
+					<a
+						class="contact__link"
+						href="https://github.com/AdaBan"
+						target="_blank"
+					>
+						github</a> or 
+					<a
+						class="contact__link"
+						href="https://twitter.com/ada_banaszak"
+						target="_blank"
+					>
+						twitter
+					</a>. I would be happy to chat and get to know you!</p>
 			</div>
 		</footer>	
 	</body>
