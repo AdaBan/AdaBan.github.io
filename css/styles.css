@@ -1,5 +1,3 @@
-/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
-
 :root {
 	--accent-color: #bfb5af;
 	--text-color: #070606;
@@ -67,7 +65,7 @@ body {
 	position: relative;
 	z-index: 1;
 	padding: .5rem;
-	background: var(--odd-bg-color);
+	background: transparent;
 	color: var(--odd-text-color);
 	text-decoration: none;
 	font-size: 1.2em;
