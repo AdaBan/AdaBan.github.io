@@ -1,4 +1,4 @@
-/*--GLOBAL---*/
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.26, autoprefixer: v9.7.3) */
 
 :root {
 	--accent-color: #bfb5af;
@@ -7,7 +7,7 @@
 	--odd-text-color: #fff;
 	--odd-bg-color: #29339b;
 	--standard-spacing: 100px;
-	font-size: 6vw;
+	font-size: 5vw;
 }
 
 body {
@@ -46,7 +46,8 @@ body {
 	height: calc(var(--standard-spacing) / 2);
 	width: 100%;
 	background: inherit;
-	clip-path: polygon(0 0, 100% 100%, 100% 0);
+	-webkit-clip-path: polygon(0 0, 100% 100%, 100% 0);
+	        clip-path: polygon(0 0, 100% 100%, 100% 0);
 }
 
 .header__title,
@@ -63,16 +64,39 @@ body {
 }
 
 .header__button {
-	padding: .5rem 1.5rem;
-	color: inherit;
+	position: relative;
+	z-index: 1;
+	padding: .5rem;
+	background: var(--odd-bg-color);
+	color: var(--odd-text-color);
 	text-decoration: none;
 	font-size: 1.2em;
-	border: solid 2px white;
+	-webkit-transition: .3s ease-in-out;
+	-o-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.header__button::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 2px;
+	background: currentColor;
+	-webkit-transition: .3s ease;
+	-o-transition: .3s ease;
+	transition: .3s ease;
 }
 
 .header__button:hover {
-	color: var(--accent-color);
-	border: solid 2px var(--accent-color);
+	color: var(--odd-bg-color);
+}
+
+.header__button:hover::before {
+	height: 100%;
+	background: var(--bg-color);
 }
 
 .about {
@@ -86,7 +110,6 @@ body {
 .about__title {
 	display: inline-block;
 	margin-bottom: 1em;
-	border-bottom: 2px solid var(--accent-color);
 	font-size: 1.5rem;
 }
 
@@ -111,7 +134,8 @@ body {
 	height: calc(var(--standard-spacing) / 2);
 	width: 100%;
 	background: inherit;
-	clip-path: polygon(0 100%, 100% 100%, 0 0);
+	-webkit-clip-path: polygon(0 100%, 100% 100%, 0 0);
+	        clip-path: polygon(0 100%, 100% 100%, 0 0);
 }
 
 .contact__title {
@@ -124,15 +148,39 @@ body {
 }
 
 .contact__link {
+	position: relative;
+	z-index: 1;
 	display: inline-block;
 	text-decoration: none;
 	color: inherit;
-	border-bottom: 2px solid var(--accent-color);
-	transition: ease-in-out, .5s;
+	-webkit-transition: ease-in-out, .5s;
+	-o-transition: ease-in-out, .5s;
+	-webkit-transition: .3s ease;
+	-o-transition: .3s ease;
+	transition: .3s ease;
+}
+
+.contact__link::before {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 2px;
+	background: currentColor;
+	-webkit-transition: .3s ease;
+	-o-transition: .3s ease;
+	transition: .3s ease;
 }
 
 .contact__link:hover {
-	color: var(--accent-color);
+	color: var(--odd-bg-color);
+}
+
+.contact__link:hover::before {
+	height: 100%;
+	background: var(--bg-color);
 }
 
 @media (min-width: 768px) {
@@ -141,8 +189,14 @@ body {
 	}
 
 	.header {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
 		display: flex;
-		align-items: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        -webkit-align-items: center;
+		        align-items: center;
 		height: 100vh;
 		padding: 0;
 	}
@@ -158,18 +212,16 @@ body {
 }
 
 @media (min-width: 1040px) {
+	.about {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: -webkit-flex;
+		display: flex;
+		margin: 0 calc(var(--standard-spacing) / 2 * -1);
+	}
+
 	.about__section {
-		width: calc(100% - 200px);
-		margin: 100px 0;
-	}
-
-	.about__section:last-of-type {
-		margin-left: 100px;
-	}
-}
-
-@media (min-width: 1200px) {
-	:root {
-		font-size: 30px;
+		width: 50%;
+		padding: calc(var(--standard-spacing) / 2);
 	}
 }
