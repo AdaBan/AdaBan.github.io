@@ -27,7 +27,7 @@ strong {
 
 .container {
 	width: 80%;
-	max-width: 1280px;
+	max-width: 768px;
 	margin: 0 auto;
 }
 
@@ -105,7 +105,7 @@ strong {
 }
 
 .about__section {
-	margin: calc(var(--standard-spacing) / 2) 0;
+	margin: calc(var(--standard-spacing)) 0;
 }
 
 .about__title {
@@ -205,22 +205,12 @@ strong {
 		margin-bottom: 0;
 	}
 
+	.about {
+		width: 75%;
+		margin: 0 auto;
+	}
+
 	.contact {
 		padding: calc(var(--standard-spacing) * 1.5) 0;
-	}
-}
-
-@media (min-width: 1040px) {
-	.about {
-		display: -webkit-box;
-		display: -ms-flexbox;
-		display: -webkit-flex;
-		display: flex;
-		margin: 0 calc(var(--standard-spacing) * -1);
-	}
-
-	.about__section {
-		width: 50%;
-		padding: calc(var(--standard-spacing) * 1.5);
 	}
 }
