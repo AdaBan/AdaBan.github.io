@@ -21,6 +21,10 @@ body {
 	-moz-osx-font-smoothing: grayscale;
 }
 
+strong {
+	font-weight: 400;
+}
+
 .container {
 	width: 80%;
 	max-width: 1280px;
@@ -216,6 +220,6 @@ body {
 
 	.about__section {
 		width: 50%;
-		padding: calc(var(--standard-spacing));
+		padding: calc(var(--standard-spacing) * 1.5);
 	}
 }
