@@ -142,6 +142,7 @@ strong {
 }
 
 .contact__text {
+	max-width: 870px;
 	font-size: 1.333rem;
 }
 
