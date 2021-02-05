@@ -1,17 +1,17 @@
 :root {
 	--accent-color: #bfb5af;
-	--text-color: #070606;
+	--text-color: #132321;
 	--bg-color: #fff;
 	--odd-text-color: #fff;
-	--odd-bg-color: #29339b;
-	--standard-spacing: 100px;
+	--odd-bg-color: #254441;
+	--standard-spacing: 80px;
 	font-size: 5vw;
 }
 
 body {
 	background: var(--bg-color);
 	color: var(--text-color);
-	font-family: "Karla";
+	font-family: "Karla", sans-serif;
 	font-weight: 300;
 	line-height: 1.5;
 	-webkit-font-kerning: normal;
@@ -48,17 +48,15 @@ body {
 	        clip-path: polygon(0 0, 100% 100%, 100% 0);
 }
 
-.header__title,
-.header__subtitle {
-	font-size: 1.5rem;
-}
-
 .header__title {
 	margin-bottom: 1em;
+	font-size: 1.777rem;
+	font-weight: 400;
 }
 
 .header__subtitle {
 	margin-bottom: 2em;
+	font-size: 1.333rem;
 }
 
 .header__button {
@@ -68,7 +66,8 @@ body {
 	background: transparent;
 	color: var(--odd-text-color);
 	text-decoration: none;
-	font-size: 1.2em;
+	font-size: 1.333em;
+	font-weight: 400;
 	-webkit-transition: .3s ease-in-out;
 	-o-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
@@ -108,7 +107,8 @@ body {
 .about__title {
 	display: inline-block;
 	margin-bottom: 1em;
-	font-size: 1.5rem;
+	font-size: 1.333rem;
+	font-weight: 400;
 }
 
 .list__item {
@@ -121,6 +121,7 @@ body {
 	padding: var(--standard-spacing) 0;
 	background: var(--odd-bg-color);
 	color: var(--odd-text-color);
+	font-weight: 400;
 }
 
 .contact::after {
@@ -136,13 +137,8 @@ body {
 	        clip-path: polygon(0 100%, 100% 100%, 0 0);
 }
 
-.contact__title {
-	font-size: 1.5rem;
-	margin-bottom: 1em;
-}
-
 .contact__text {
-	font-size: 1.5rem;
+	font-size: 1.333rem;
 }
 
 .contact__link {
@@ -200,7 +196,7 @@ body {
 	}
 
 	.header__title {
-		font-size: 2.5rem;
+		font-size: 2.369rem;
 		margin-bottom: 0;
 	}
 
@@ -215,11 +211,11 @@ body {
 		display: -ms-flexbox;
 		display: -webkit-flex;
 		display: flex;
-		margin: 0 calc(var(--standard-spacing) / 2 * -1);
+		margin: 0 calc(var(--standard-spacing) * -1);
 	}
 
 	.about__section {
 		width: 50%;
-		padding: calc(var(--standard-spacing) / 2);
+		padding: calc(var(--standard-spacing));
 	}
 }
