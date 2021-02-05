@@ -100,10 +100,6 @@ strong {
 	background: var(--bg-color);
 }
 
-.about {
-	padding: calc(var(--standard-spacing) / 2) 0;
-}
-
 .about__section {
 	margin: calc(var(--standard-spacing)) 0;
 }
@@ -208,6 +204,7 @@ strong {
 	.about {
 		width: 75%;
 		margin: 0 auto;
+		padding: calc(var(--standard-spacing) / 2) 0;
 	}
 
 	.contact {
