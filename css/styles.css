@@ -101,7 +101,7 @@ strong {
 }
 
 .about {
-	padding: calc(var(--standard-spacing) / 5) 0;
+	padding: 0 0 calc(var(--standard-spacing) / 5);
 }
 
 .about__section {
