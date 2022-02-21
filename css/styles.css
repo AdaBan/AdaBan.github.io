@@ -18,7 +18,7 @@
   --dark-color: #37575c;
   --light-color: #d0e1da;
   --standard-spacing: 80px;
-  font-size: clamp(15px, 4vw, 40px);
+  font-size: clamp(15px, 4vw, 32px);
 }
 
 *,
@@ -90,9 +90,9 @@ p:last-child {
 }
 
 .container {
-  padding: 0 clamp(15px, 4vw, 36px);
+  padding: 0 clamp(15px, 5vw, 64px);
   width: 100%;
-  max-width: 1236px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
